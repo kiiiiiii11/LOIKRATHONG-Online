@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลอยกระทงออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+
+    <!-- ส่วนหัวเว็บไซต์ -->
+    <header class="header">
+        <h1>ลอยกระทงออนไลน์</h1>
+        <p>ร่วมส่งคำอวยพรและลอยกระทงไปด้วยกัน</p>
+    </header>
+
+    <!-- ช่องพิมพ์คำอวยพร -->
+    <section class="input-container">
+        <input type="text" id="wish" placeholder="พิมพ์คำอวยพรของคุณที่นี่...">
+        <button onclick="sendKrathong()">ลอยกระทง</button>
+        <button onclick="resetKrathongs()">รีเซ็ตกระทง</button>
+    </section>
+
+    <!-- แม่น้ำ -->
+    <div id="river"></div>
+
+    <!-- ป๊อปอัพแจ้งเตือน -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="krathong.png" alt="กระทง">
+            <p>คุณได้ลอยกระทงแล้ว!</p>
+            <button onclick="closePopup()">ปิด</button>
+        </div>
+    </div>
+
+</body>
+</html>
